@@ -16,7 +16,7 @@ def PlasticCard():
     digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
     
     today = datetime.datetime.now()
-    day = today.day
+    day = today.month
     year = today.year
     
     plastic_card_number = str(year) + '-' + '-'.join([''.join((secrets.choice(digits)) for i in range(4)) for j in range(3)])
